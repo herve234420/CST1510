@@ -1,0 +1,3 @@
+Electricity,OVER LIMIT
+Water,WITHIN LIMIT
+Internet,OVER LIMIT
