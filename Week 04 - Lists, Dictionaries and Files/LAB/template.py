@@ -20,7 +20,7 @@ Delete these instructions as you replace them with your code.
 #    one-line docstring.
 
 # your function(s) go here
-
+# Define functions
 def check_record(value, limit):
     """Calculate the difference, percentage and status for a record."""
     difference = value - limit
@@ -35,6 +35,7 @@ def check_record(value, limit):
 
     return difference, percent, status
 
+#Define the print_report function
 
 def print_report(label, value, limit, difference, percent, status):
     """Print a formatted report for one record."""
@@ -59,6 +60,8 @@ def print_report(label, value, limit, difference, percent, status):
 #                Make your own data file, one record per line.
 #    Excellent : also write the results out to a new file (one line per
 #                record: label, status), as well as printing them.
+
+# Define the load_records function
 def load_records(path):
     """Load records from a file and return them as dictionaries."""
     records = []
@@ -94,6 +97,7 @@ records = load_records("records_sample.txt")
 #                print that once, after the loop ends.
 
 # your loop goes here
+# Initialize the over_limit_count variable
 over_limit_count = 0
 
 with open("results.txt", "w") as f:

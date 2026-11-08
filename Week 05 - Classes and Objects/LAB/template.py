@@ -23,13 +23,15 @@ Delete these instructions as you replace them with your code.
 #    Excellent : also add over_limit_count as a class-level running total -
 #                see the note below.
 
+# Create a class to store record details
 class Record:
     """Store a record label, value, and limit."""
-
+ # Class variable shared by all Record objects
     over_limit_count = 0
 
     def __init__(self, label, value, limit):
         """Store the record details and track over-limit totals."""
+        # Store the information inside this object
         self.label = label
         self.value = value
         self.limit = limit
